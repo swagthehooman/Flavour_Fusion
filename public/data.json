@@ -1,0 +1,26 @@
+[
+    {
+        "cuisineType":[
+            {
+                "title":"Chinese Cuisine",
+                "description":[
+            
+                ],
+                "image":"",
+                "link":""
+            }
+        ]
+    },
+    {
+        "mealType":[
+            {
+                "title":"",
+                "description":[
+            
+                ],
+                "image":"",
+                "link":""
+            }
+        ]
+    }
+]
