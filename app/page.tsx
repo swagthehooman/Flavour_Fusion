@@ -1,6 +1,11 @@
 import { styleScript, oleoScript, dongle } from "./fontConst";
 import CuisineCard from "./components/CuisineCard";
 import Link from "next/link";
+import data from './api/data.json';
+
+function cards(props: cuisineType) {
+  return <CuisineCard title={props.title} description={props.description} image={props.image} link={props.link} url={props.url} />
+}
 
 export default function Home() {
   return (
@@ -29,14 +34,7 @@ export default function Home() {
         <p className="text-5xl mb-2">Our Recommendations</p>
 
         <div className="m-8 grid grid-cols-2 gap-8 place-items-center">
-          <CuisineCard title="Chinese" description={["Feeling chinese takeout?", "70 Recipies.",
-            "Fast and delicious.."]} image="/images/chinese_cuisine.jpeg" link="/recipeList" key={1} />
-
-          <CuisineCard title="Indian" description={["Craving for that Indian spicy?", "50+ Recipies.", "Finger licking good.."]} image="/images/indian_cuisine.jpeg" link="/recipeList" key={2} />
-
-          <CuisineCard title="Healthy" description={["Want a right start to the day?", "20+ Recipies.", "Prepare exciting salad dishes.."]} image="/images/salad_healthy.jpeg" link="/recipeList" key={3} />
-
-          <CuisineCard title="Italian" description={["Date night?", "30+ Recipies", "Impress your date.."]} image="/images/italian_cuisine.jpeg" link="/recipeList" key={4} />
+          {data[0].cuisineType?.slice(0, 4).map(cards)}
         </div>
 
         <div className="mt-16">

@@ -2,7 +2,7 @@
 
 ## Pages
 
-    1) -[] Home Page
+    1) -[x] Home Page
     2) -[] Recipe selection Page
     3) -[] Recipe Page
     4) -[] Contribute Page
@@ -21,7 +21,7 @@
     7) -[x] Salads/Healthy
     8) -[x] Cocktails/Mocktails
     9) -[x] Deserts/Snacks
-    10) -[x] American
+    10) -[] American
 
 ### Meal Type
 

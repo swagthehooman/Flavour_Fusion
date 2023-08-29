@@ -3,4 +3,5 @@ type cuisineType = {
   description: string[],
   link: string,
   image: string,
+  url: string
 }
