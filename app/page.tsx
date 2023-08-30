@@ -4,7 +4,7 @@ import Link from "next/link";
 import data from './api/data.json';
 
 function cards(props: cuisineType) {
-  return <CuisineCard title={props.title} description={props.description} image={props.image} link={props.link} url={props.url} />
+  return <CuisineCard title={props.title} description={props.description} image={props.image} query={props.query} />
 }
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
         <p className="text-5xl mb-2">Our Recommendations</p>
 
         <div className="m-8 grid grid-cols-2 gap-8 place-items-center">
-          {data[0].cuisineType?.slice(0, 4).map(cards)}
+          {data.cuisineType?.slice(0, 4).map(cards)}
         </div>
 
         <div className="mt-16">

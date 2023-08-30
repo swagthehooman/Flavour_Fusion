@@ -1,5 +1,4 @@
-[
-    {
+{
         "cuisineType":[
             {
                 "title":"Chinese Cuisine",
@@ -7,8 +6,7 @@
                     "Feeling chinese takeout?","70+ Recipies","Fast and delicious"
                 ],
                 "image":"/images/chinese_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"chinese"
+                "query":"cuisineType=chinese"
             },
             {
                 "title":"Indian Cuisine",
@@ -16,35 +14,16 @@
                     "Craving for Indian spices?","50+ Recipies","Finger Licking good.."
                 ],
                 "image":"/images/indian_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"indian"
+                "query":"cuisineType=indian"
             },
-            {
-                "title":"Healthy Cuisine",
-                "description":[
-                    "Want a right start to the day?","20+ Recipies","Prepare exciting salad dishes.."
-                ],
-                "image":"/images/salad_healthy.jpeg",
-                "link":"/recipeList",
-                "url":"salad"
-            },
+            
             {
                 "title":"Italian Cuisine",
                 "description":[
                     "Date night?","30+ Recipies","Impress your date."
                 ],
                 "image":"/images/italian_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"italian"
-            },
-            {
-                "title":"Chinese Cuisine",
-                "description":[
-                    "Feeling chinese takeout?","70+ Recipies","Fast and delicious"
-                ],
-                "image":"/images/chinese_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"chinese"
+                "query":"cuisineType=italian"
             },
             {
                 "title":"French Cuisine",
@@ -52,8 +31,7 @@
                     "Love the french food?","70+ Recipies","Wine and shine"
                 ],
                 "image":"/images/french_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"french"
+                "query":"cuisineType=french"
             },
             {
                 "title":"Spanish Cuisine",
@@ -61,8 +39,7 @@
                     "Want spanish spice delight?","30+ Recipies","prepare a hearty dish.."
                 ],
                 "image":"/images/spanish_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"spanish"
+                "query":"cuisineType=spanish"
             },
             {
                 "title":"British Cuisine",
@@ -70,30 +47,9 @@
                     "Feel for classy dishes?","70+ Recipies","Simple and tasty.."
                 ],
                 "image":"/images/british_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"british"
-            },
-            {
-                "title":"Cocktails/Mocktails",
-                "description":[
-                    "Weekend or feeling great?","70+ Recipies","Don't get tipsy though.."
-                ],
-                "image":"/images/cocktail_pic.jpeg",
-                "link":"/recipeList",
-                "url":"cocktail"
-            },
-            {
-                "title":"Deserts",
-                "description":[
-                    "Want a perfect end to your meal?","70+ Recipies","Comfort of desert right now.."
-                ],
-                "image":"/images/desert_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"desert"
+                "query":"cuisineType=british"
             }
-        ]
-    },
-    {
+        ],
         "mealType":[
             {
                 "title":"BreakFast",
@@ -101,8 +57,7 @@
                     "Begin your day correctlt.","70+ Recipies","Healthy food.."
                 ],
                 "image":"/images/salad_healthy.jpeg",
-                "link":"/recipeList",
-                "url":"breakfast"
+                "query":"mealType=breakfast"
             },
             {
                 "title":"Lunch",
@@ -110,8 +65,7 @@
                     "Its not needed, its necessary","70+ Recipies","A large array to choose from"
                 ],
                 "image":"/images/italian_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"lunch"
+                "query":"mealType=lunch"
             },
             {
                 "title":"Dinner",
@@ -119,9 +73,25 @@
                     "Let's have full belly to sleep, shall we?","70+ Recipies","Not too much though"
                 ],
                 "image":"/images/indian_cuisine.jpeg",
-                "link":"/recipeList",
-                "url":"dinner"
+                "query":"mealType=dinner"
             }
-        ]
-    }
-]
+        ],
+        "dishType":[
+            {
+                "title":"Healthy Cuisine",
+                "description":[
+                    "Want a right start to the day?","20+ Recipies","Prepare exciting salad dishes.."
+                ],
+                "image":"/images/salad_healthy.jpeg",
+                "query":"dishType=salad"
+            },
+            {
+                "title":"Deserts",
+                "description":[
+                    "Want a perfect end to your meal?","70+ Recipies","Comfort of desert right now.."
+                ],
+                "image":"/images/desert_cuisine.jpeg",
+                "query":"dishType=desert"
+            }
+        ]        
+}
