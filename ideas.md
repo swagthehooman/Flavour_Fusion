@@ -35,3 +35,8 @@
 
     1) Logo- Style Script
     2) Rest- Oleo Script
+
+## Api mappings
+
+    1) cuisines page
+        a)
