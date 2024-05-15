@@ -1,5 +1,6 @@
 import { styleScript, oleoScript, dongle } from "./fontConst";
 import CuisineCard from "./components/CuisineCard";
+import Image from "next/image";
 import Link from "next/link";
 import data from './api/data.json';
 
@@ -13,7 +14,7 @@ export default function Home() {
       {/* Hero section */}
       <section className={styleScript.className}>
         <div className='flex justify-evenly items-center w-full'>
-          <img src='/images/salad_healthy_1.png' alt='healthy' className='w-[20%]' />
+          <Image src='/images/salad_healthy_1.png' alt='healthy' className='w-[20%]' />
           <p className="text-5xl w-1/3 text-center">Wanna cook something special? <br />
             A Date or quite night in? <br />
             We got yo back.</p>
@@ -26,7 +27,7 @@ export default function Home() {
             </div>
 
           </div>
-          <img src='/images/healthy_sprout.png' alt='healthy' className='w-[20%]' />
+          <Image src='/images/healthy_sprout.png' alt='healthy' className='w-[20%]' />
         </div>
       </section>
       {/* Recommendations */}

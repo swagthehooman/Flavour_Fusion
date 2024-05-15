@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { oleoScript, dongle } from "../fontConst"
 export default function RecipeInfoCard() {
     return (
@@ -7,7 +8,7 @@ export default function RecipeInfoCard() {
                 <p>Time: 40 mins</p>
                 <p>Calories: 200 Kcal</p>
             </div>
-            <img src="/images/indian_cuisine.jpeg" alt="picture" className="rounded-full w-60 h-60 absolute -left-[60%]" />
+            <Image src="/images/indian_cuisine.jpeg" alt="picture" className="rounded-full w-60 h-60 absolute -left-[60%]" />
             <div>
                 <p className={(oleoScript.className) + " text-2xl mb-4"}>Ingredients</p>
                 <p className={(dongle.className) + " text-2xl"}>Chowmein<br />

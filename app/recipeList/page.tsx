@@ -3,7 +3,7 @@ import { styleScript } from "../fontConst"
 import RecipeTile from "../components/RecipeTile"
 import { useSearchParams } from "next/navigation"
 import { useState, useEffect } from "react"
-import { json } from "stream/consumers"
+import recipe from '../api/recipe.json';
 
 export default function RecipeList({ cuisineRes }: any) {
 
@@ -14,11 +14,12 @@ export default function RecipeList({ cuisineRes }: any) {
     const [recipeData, setRecipeData] = useState<any[]>([])
 
     async function getRecipies() {
-        const res = await fetch(`https://api.edamam.com/api/recipes/v2/?&type=public&app_id=284a43fd&app_key=8873a91af0b9243e1a8bbbad2331f1cc
-&${key}=${value}`)
-        const resData = await res.json();
-        setRecipeData(resData.hits)
-        console.log(resData.hits[0].recipe)
+        //         const res = await fetch(`https://api.edamam.com/api/recipes/v2/?&type=public&app_id=284a43fd&app_key=8873a91af0b9243e1a8bbbad2331f1cc
+        // &${key}=${value}`)
+        //         const resData = await res.json();
+        //         setRecipeData(resData.hits)
+        //         console.log(resData.hits[0].recipe)
+        setRecipeData(recipe);
     }
 
     useEffect(() => {

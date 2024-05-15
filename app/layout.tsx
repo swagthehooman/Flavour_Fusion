@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Flavor Fusion',
@@ -16,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <img className='fixed left-0 top-0 h-full w-full -z-10' src='/images/marble.jpeg' alt='background'/>
-        <NavBar/>
+        <Image className='fixed left-0 top-0 h-full w-full -z-10' src='/images/marble.jpeg' alt='background' />
+        <NavBar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )

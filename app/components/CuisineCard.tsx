@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { oleoScript, styleScript } from "../fontConst"
+import Image from "next/image"
 
 export default function CuisineCard(props: cuisineType) {
   const [key, value] = props.query.split('=')
@@ -10,13 +11,13 @@ export default function CuisineCard(props: cuisineType) {
         <p className={(oleoScript.className)}>{props.description[0]}<br />{props.description[1]}<br />{props.description[2]}</p>
       </div>
       {key === "cuisineType" ? <Link href={{ pathname: '/recipeList', query: { cuisineType: `${value}` } }} >
-        <img src="/images/arrow.png" alt="browse" className="w-10 bg-button-color mt-4 rounded-full cursor-pointer" />
+        <Image src="/images/arrow.png" alt="browse" className="w-10 bg-button-color mt-4 rounded-full cursor-pointer" />
       </Link> : key === "mealType" ? <Link href={{ pathname: '/recipeList', query: { mealType: `${value}` } }} >
-        <img src="/images/arrow.png" alt="browse" className="w-10 bg-button-color mt-4 rounded-full cursor-pointer" />
+        <Image src="/images/arrow.png" alt="browse" className="w-10 bg-button-color mt-4 rounded-full cursor-pointer" />
       </Link> : <Link href={{ pathname: '/recipeList', query: { dishType: `${value}` } }} >
-        <img src="/images/arrow.png" alt="browse" className="w-10 bg-button-color mt-4 rounded-full cursor-pointer" />
+        <Image src="/images/arrow.png" alt="browse" className="w-10 bg-button-color mt-4 rounded-full cursor-pointer" />
       </Link>}
-      <img src={props.image} alt="cuisine picture" className="w-32 h-32 rounded-full absolute top-12 -right-[12%] " />
+      <Image src={props.image} alt="cuisine picture" className="w-32 h-32 rounded-full absolute top-12 -right-[12%] " />
     </div>
   )
 }
